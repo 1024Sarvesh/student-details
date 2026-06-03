@@ -7,10 +7,11 @@ datasource db {
   provider = "postgresql"
 }
 
-model studentReg{
-    id Int @id @default(autoincrement())
-    name String 
-    fatherName String
-    mobileNo Int @unique
-    Address String 
+model studentReg {
+  id         Int       @id @default(autoincrement())
+  name       String    @unique
+  fatherName String
+  mobileNo   String       @unique
+  Address    String
+  created_at DateTime?
 }
