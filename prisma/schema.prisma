@@ -11,7 +11,7 @@ model studentReg {
   id         Int       @id @default(autoincrement())
   name       String    @unique
   fatherName String
-  mobileNo   String       @unique
+  mobileNo   String    @unique
   Address    String
   created_at DateTime?
 }
