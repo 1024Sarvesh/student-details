@@ -523,6 +523,7 @@ export const StudentRegScalarFieldEnum = {
   fatherName: 'fatherName',
   mobileNo: 'mobileNo',
   Address: 'Address',
+  photoUrl: 'photoUrl',
   created_at: 'created_at'
 } as const
 

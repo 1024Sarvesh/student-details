@@ -9,6 +9,7 @@ const createStudentReg = async (req, res) => {
         fatherName: req.body.fatherName,
         mobileNo: req.body.mobileNo,
         Address: req.body.Address,
+        photoUrl: req.file ? req.file.path : null,
         created_at: new Date(),
       },
     });
@@ -32,6 +33,11 @@ const getStudentRegById = async (req, res) => {
       id: Number(req.params.id),
     },
   });
+
+   if (registration?.photoUrl) {
+    registration.photoUrl =
+      `${req.protocol}://${req.get("host")}/${registration.photoUrl}`;
+  }
 
   res.json({ registration });
 };
