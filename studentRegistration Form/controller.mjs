@@ -45,7 +45,7 @@ const updateStudentReg = async (req, res) => {
       name: req.body.name,
       fatherName: req.body.fatherName,
       mobileNo: req.body.mobileNo,
-      address: req.body.address,
+      Address: req.body.Address,
     },
   });
 
