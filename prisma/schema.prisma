@@ -12,7 +12,7 @@ model studentReg {
   name       String    @unique
   fatherName String
   mobileNo   String    @unique
-  Address    String
+  address    String
   photoUrl    String?
   created_at DateTime?
 }

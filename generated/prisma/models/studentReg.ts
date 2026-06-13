@@ -39,7 +39,7 @@ export type StudentRegMinAggregateOutputType = {
   name: string | null
   fatherName: string | null
   mobileNo: string | null
-  Address: string | null
+  address: string | null
   photoUrl: string | null
   created_at: Date | null
 }
@@ -49,7 +49,7 @@ export type StudentRegMaxAggregateOutputType = {
   name: string | null
   fatherName: string | null
   mobileNo: string | null
-  Address: string | null
+  address: string | null
   photoUrl: string | null
   created_at: Date | null
 }
@@ -59,7 +59,7 @@ export type StudentRegCountAggregateOutputType = {
   name: number
   fatherName: number
   mobileNo: number
-  Address: number
+  address: number
   photoUrl: number
   created_at: number
   _all: number
@@ -79,7 +79,7 @@ export type StudentRegMinAggregateInputType = {
   name?: true
   fatherName?: true
   mobileNo?: true
-  Address?: true
+  address?: true
   photoUrl?: true
   created_at?: true
 }
@@ -89,7 +89,7 @@ export type StudentRegMaxAggregateInputType = {
   name?: true
   fatherName?: true
   mobileNo?: true
-  Address?: true
+  address?: true
   photoUrl?: true
   created_at?: true
 }
@@ -99,7 +99,7 @@ export type StudentRegCountAggregateInputType = {
   name?: true
   fatherName?: true
   mobileNo?: true
-  Address?: true
+  address?: true
   photoUrl?: true
   created_at?: true
   _all?: true
@@ -196,7 +196,7 @@ export type StudentRegGroupByOutputType = {
   name: string
   fatherName: string
   mobileNo: string
-  Address: string
+  address: string
   photoUrl: string | null
   created_at: Date | null
   _count: StudentRegCountAggregateOutputType | null
@@ -229,7 +229,7 @@ export type studentRegWhereInput = {
   name?: Prisma.StringFilter<"studentReg"> | string
   fatherName?: Prisma.StringFilter<"studentReg"> | string
   mobileNo?: Prisma.StringFilter<"studentReg"> | string
-  Address?: Prisma.StringFilter<"studentReg"> | string
+  address?: Prisma.StringFilter<"studentReg"> | string
   photoUrl?: Prisma.StringNullableFilter<"studentReg"> | string | null
   created_at?: Prisma.DateTimeNullableFilter<"studentReg"> | Date | string | null
 }
@@ -239,7 +239,7 @@ export type studentRegOrderByWithRelationInput = {
   name?: Prisma.SortOrder
   fatherName?: Prisma.SortOrder
   mobileNo?: Prisma.SortOrder
-  Address?: Prisma.SortOrder
+  address?: Prisma.SortOrder
   photoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
   created_at?: Prisma.SortOrderInput | Prisma.SortOrder
 }
@@ -252,7 +252,7 @@ export type studentRegWhereUniqueInput = Prisma.AtLeast<{
   OR?: Prisma.studentRegWhereInput[]
   NOT?: Prisma.studentRegWhereInput | Prisma.studentRegWhereInput[]
   fatherName?: Prisma.StringFilter<"studentReg"> | string
-  Address?: Prisma.StringFilter<"studentReg"> | string
+  address?: Prisma.StringFilter<"studentReg"> | string
   photoUrl?: Prisma.StringNullableFilter<"studentReg"> | string | null
   created_at?: Prisma.DateTimeNullableFilter<"studentReg"> | Date | string | null
 }, "id" | "name" | "mobileNo">
@@ -262,7 +262,7 @@ export type studentRegOrderByWithAggregationInput = {
   name?: Prisma.SortOrder
   fatherName?: Prisma.SortOrder
   mobileNo?: Prisma.SortOrder
-  Address?: Prisma.SortOrder
+  address?: Prisma.SortOrder
   photoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
   created_at?: Prisma.SortOrderInput | Prisma.SortOrder
   _count?: Prisma.studentRegCountOrderByAggregateInput
@@ -280,7 +280,7 @@ export type studentRegScalarWhereWithAggregatesInput = {
   name?: Prisma.StringWithAggregatesFilter<"studentReg"> | string
   fatherName?: Prisma.StringWithAggregatesFilter<"studentReg"> | string
   mobileNo?: Prisma.StringWithAggregatesFilter<"studentReg"> | string
-  Address?: Prisma.StringWithAggregatesFilter<"studentReg"> | string
+  address?: Prisma.StringWithAggregatesFilter<"studentReg"> | string
   photoUrl?: Prisma.StringNullableWithAggregatesFilter<"studentReg"> | string | null
   created_at?: Prisma.DateTimeNullableWithAggregatesFilter<"studentReg"> | Date | string | null
 }
@@ -289,7 +289,7 @@ export type studentRegCreateInput = {
   name: string
   fatherName: string
   mobileNo: string
-  Address: string
+  address: string
   photoUrl?: string | null
   created_at?: Date | string | null
 }
@@ -299,7 +299,7 @@ export type studentRegUncheckedCreateInput = {
   name: string
   fatherName: string
   mobileNo: string
-  Address: string
+  address: string
   photoUrl?: string | null
   created_at?: Date | string | null
 }
@@ -308,7 +308,7 @@ export type studentRegUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   fatherName?: Prisma.StringFieldUpdateOperationsInput | string
   mobileNo?: Prisma.StringFieldUpdateOperationsInput | string
-  Address?: Prisma.StringFieldUpdateOperationsInput | string
+  address?: Prisma.StringFieldUpdateOperationsInput | string
   photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   created_at?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
 }
@@ -318,7 +318,7 @@ export type studentRegUncheckedUpdateInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   fatherName?: Prisma.StringFieldUpdateOperationsInput | string
   mobileNo?: Prisma.StringFieldUpdateOperationsInput | string
-  Address?: Prisma.StringFieldUpdateOperationsInput | string
+  address?: Prisma.StringFieldUpdateOperationsInput | string
   photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   created_at?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
 }
@@ -328,7 +328,7 @@ export type studentRegCreateManyInput = {
   name: string
   fatherName: string
   mobileNo: string
-  Address: string
+  address: string
   photoUrl?: string | null
   created_at?: Date | string | null
 }
@@ -337,7 +337,7 @@ export type studentRegUpdateManyMutationInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   fatherName?: Prisma.StringFieldUpdateOperationsInput | string
   mobileNo?: Prisma.StringFieldUpdateOperationsInput | string
-  Address?: Prisma.StringFieldUpdateOperationsInput | string
+  address?: Prisma.StringFieldUpdateOperationsInput | string
   photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   created_at?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
 }
@@ -347,7 +347,7 @@ export type studentRegUncheckedUpdateManyInput = {
   name?: Prisma.StringFieldUpdateOperationsInput | string
   fatherName?: Prisma.StringFieldUpdateOperationsInput | string
   mobileNo?: Prisma.StringFieldUpdateOperationsInput | string
-  Address?: Prisma.StringFieldUpdateOperationsInput | string
+  address?: Prisma.StringFieldUpdateOperationsInput | string
   photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   created_at?: Prisma.NullableDateTimeFieldUpdateOperationsInput | Date | string | null
 }
@@ -357,7 +357,7 @@ export type studentRegCountOrderByAggregateInput = {
   name?: Prisma.SortOrder
   fatherName?: Prisma.SortOrder
   mobileNo?: Prisma.SortOrder
-  Address?: Prisma.SortOrder
+  address?: Prisma.SortOrder
   photoUrl?: Prisma.SortOrder
   created_at?: Prisma.SortOrder
 }
@@ -371,7 +371,7 @@ export type studentRegMaxOrderByAggregateInput = {
   name?: Prisma.SortOrder
   fatherName?: Prisma.SortOrder
   mobileNo?: Prisma.SortOrder
-  Address?: Prisma.SortOrder
+  address?: Prisma.SortOrder
   photoUrl?: Prisma.SortOrder
   created_at?: Prisma.SortOrder
 }
@@ -381,7 +381,7 @@ export type studentRegMinOrderByAggregateInput = {
   name?: Prisma.SortOrder
   fatherName?: Prisma.SortOrder
   mobileNo?: Prisma.SortOrder
-  Address?: Prisma.SortOrder
+  address?: Prisma.SortOrder
   photoUrl?: Prisma.SortOrder
   created_at?: Prisma.SortOrder
 }
@@ -417,7 +417,7 @@ export type studentRegSelect<ExtArgs extends runtime.Types.Extensions.InternalAr
   name?: boolean
   fatherName?: boolean
   mobileNo?: boolean
-  Address?: boolean
+  address?: boolean
   photoUrl?: boolean
   created_at?: boolean
 }, ExtArgs["result"]["studentReg"]>
@@ -427,7 +427,7 @@ export type studentRegSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Ex
   name?: boolean
   fatherName?: boolean
   mobileNo?: boolean
-  Address?: boolean
+  address?: boolean
   photoUrl?: boolean
   created_at?: boolean
 }, ExtArgs["result"]["studentReg"]>
@@ -437,7 +437,7 @@ export type studentRegSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Ex
   name?: boolean
   fatherName?: boolean
   mobileNo?: boolean
-  Address?: boolean
+  address?: boolean
   photoUrl?: boolean
   created_at?: boolean
 }, ExtArgs["result"]["studentReg"]>
@@ -447,12 +447,12 @@ export type studentRegSelectScalar = {
   name?: boolean
   fatherName?: boolean
   mobileNo?: boolean
-  Address?: boolean
+  address?: boolean
   photoUrl?: boolean
   created_at?: boolean
 }
 
-export type studentRegOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "fatherName" | "mobileNo" | "Address" | "photoUrl" | "created_at", ExtArgs["result"]["studentReg"]>
+export type studentRegOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "fatherName" | "mobileNo" | "address" | "photoUrl" | "created_at", ExtArgs["result"]["studentReg"]>
 
 export type $studentRegPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "studentReg"
@@ -462,7 +462,7 @@ export type $studentRegPayload<ExtArgs extends runtime.Types.Extensions.Internal
     name: string
     fatherName: string
     mobileNo: string
-    Address: string
+    address: string
     photoUrl: string | null
     created_at: Date | null
   }, ExtArgs["result"]["studentReg"]>
@@ -892,7 +892,7 @@ export interface studentRegFieldRefs {
   readonly name: Prisma.FieldRef<"studentReg", 'String'>
   readonly fatherName: Prisma.FieldRef<"studentReg", 'String'>
   readonly mobileNo: Prisma.FieldRef<"studentReg", 'String'>
-  readonly Address: Prisma.FieldRef<"studentReg", 'String'>
+  readonly address: Prisma.FieldRef<"studentReg", 'String'>
   readonly photoUrl: Prisma.FieldRef<"studentReg", 'String'>
   readonly created_at: Prisma.FieldRef<"studentReg", 'DateTime'>
 }
